@@ -23,11 +23,13 @@ class MainActivity : AppCompatActivity() {
         val btnSimpleToast = findViewById<Button>(R.id.btnSimpleToast)
         val btnCustomToast = findViewById<Button>(R.id.btnCustomToast)
 
+        // Shows a simple toast
         btnSimpleToast.setOnClickListener {
             val toast = Toast.makeText(this,"This is a simple toast!", Toast.LENGTH_LONG )
             toast.show()
         }
 
+        // Shows custom toast
         btnCustomToast.setOnClickListener {
             val toast = Toast(this)
             val layoutInflater = LayoutInflater.from(this)
